@@ -1,0 +1,147 @@
+/* WDD130 Rafting Site Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1b4965;
+    --light-color: #ffffff;
+    --dark-color: #222222;
+    --overlay-dark: rgba(0, 0, 0, 0.6);
+    --overlay-light: rgba(255, 255, 255, 0.92);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark-color);
+    background-color: #f7f7f7;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+header img {
+    width: 80px;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+main {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: var(--light-color);
+    padding: 1rem;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    width: 100%;
+    min-height: 420px;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--overlay-dark);
+    color: var(--light-color);
+    padding: 0.75rem 1.25rem;
+    letter-spacing: 1px;
+    z-index: 2;
+}
+
+.hero article {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background-color: var(--overlay-light);
+    padding: 1rem;
+    overflow: auto;
+    z-index: 1;
+}
+
+.hero article img {
+    width: 180px;
+    float: right;
+    margin-left: 1rem;
+}
+
+.hero article p {
+    line-height: 1.5;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+section p {
+    line-height: 1.6;
+}
+
+footer {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--light-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.socialmedia img {
+    width: 32px;
+}
