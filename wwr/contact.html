@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | White Water Rafting Company</title>
+    <meta name="description" content="Contact White Water Rafting Company for general inquiries, reservation questions, website suggestions, and customer support.">
+    <meta name="author" content="Arthur Moroni">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Rafting Company Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="map-box">
+                <iframe
+                    src="https://www.google.com/maps?q=123%20Main%20River%20Street%2C%20Kolob%2C%20California&output=embed"
+                    title="Map showing the location of White Water Rafting Company"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <form class="contact-form" method="post" action="#">
+                <div class="form-item">
+                    <label for="fullname">Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <fieldset class="form-item radio-group">
+                    <legend>Message Purpose</legend>
+
+                    <label for="general-inquiry">
+                        <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" checked>
+                        General Inquiry
+                    </label>
+
+                    <label for="reservation-question">
+                        <input type="radio" id="reservation-question" name="purpose" value="reservation-question">
+                        Reservation Question
+                    </label>
+
+                    <label for="website-suggestion">
+                        <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <div class="form-item">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <div class="form-item checkbox-item">
+                    <label for="newsletter">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+            </form>
+        </section>
+
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Portrait of Sarah Johnson, River Guide">
+                    <figcaption>Sarah Johnson — River Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee2.jpg" alt="Portrait of Michael Davis, Trip Coordinator">
+                    <figcaption>Michael Davis — Trip Coordinator</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/employee3.jpg" alt="Portrait of Emily Carter, Customer Support Specialist">
+                    <figcaption>Emily Carter — Customer Support Specialist</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Rafting Company | Arthur Moroni</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
