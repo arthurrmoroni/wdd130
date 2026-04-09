@@ -438,13 +438,6 @@ footer p {
     margin-bottom: 2rem;
 }
 
-.trip-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
 .trip-card {
     border: 1px solid rgb(0 0 0 / 10%);
     background-color: #f8f8f8;
@@ -499,4 +492,11 @@ footer p {
         width: 90%;
         text-align: center;
     }
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
 }
